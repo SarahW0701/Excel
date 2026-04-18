@@ -14,8 +14,9 @@ The repository includes multiple independent projects. Each project is provided 
 | Name | Description | File |
 |------|------------|------|
 | Budget Tracker | Tracks income and expenses in a structured format | `Budget_Tracker.xlsm` |
-| Stock Portfolio Manager | Records and monitors personal stock investments | `Stock_Portfolio_Manager.xlsx` |
+| Stock Portfolio Manager | Tracks stock investments, performance, and dividends with automated calculations | `Stock_Portfolio_Manager.xlsx` |
 
+Records and monitors personal stock investments
 
 ---
 ---
@@ -52,25 +53,39 @@ Brief explanation of what the workbook is used for.
 ### Stock Portfolio Manager
 
 #### Purpose
-Brief explanation of what the workbook is used for.
+Track stock and ETF investments, including performance, current value, and dividends.
 
 #### Features
-- Feature 1
-- Feature 2
-- Feature 3
+- Automated portfolio calculations (value, averages, weights)
+- Real-time price integration via external data source
+- Dashboard with performance metrics and visualizations
+- Dividend tracking with yearly aggregation
 
 #### Inputs
-- What the user enters (e.g., purchases, prices, dividends)
+- **Eingabe sheet:**
+  - Transactions (buy/sell: date, asset, type, price per share)
+  - Dividends (date, asset, dividend)
+- **Portfolio sheet (initial setup only):**
+  - Asset name, WKN, ISIN
 
 #### Outputs
-- Portfolio overview, summaries, calculations, etc.
+- **Portfolio sheet:**
+  - Holdings, average price, current value, and allocation
+- **Dashboard:**
+  - Total investment, current value, dividends, and profit
+  - Performance indicators with color coding
+  - Portfolio allocation (pie chart)
+  - Per-position performance overview
+  - Dividend history with yearly breakdown and line chart
 
 #### How to Use
-1. Step 1
-2. Step 2
-3. Step 3
+1. Add new assets in the *Portfolio* sheet (name, WKN, ISIN)
+2. Record transactions and dividends in the *Eingabe* sheet
+3. Refresh data to update real-time prices
+4. Review performance and analytics in the *Dashboard*
 
 #### Notes / Limitations
-- Known constraints
-- Manual update requirements
-- Design assumptions
+- Real-time prices depend on data from an external website (börse.de)
+- Data must be refreshed manually
+- Only the *Eingabe* and initial *Portfolio* setup should be modified
+- Asset identification is based on WKN
