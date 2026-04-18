@@ -18,6 +18,7 @@ The repository includes multiple independent projects. Each project is provided 
 
 
 ---
+---
 
 ## Detailed Descriptions of Projects
 ### Budget Tracker 
