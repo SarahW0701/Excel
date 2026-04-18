@@ -60,16 +60,16 @@ Track stock and ETF investments, including performance, current value, and divid
 - Dividend tracking with yearly aggregation
 
 #### Inputs
-- **Eingabe sheet:**
+- **`Eingabe` sheet:**
   - Transactions (buy/sell: date, asset, type, price per share)
   - Dividends (date, asset, dividend)
-- **Portfolio sheet (initial setup only):**
+- **`Portfolio` sheet (initial setup only):**
   - Asset name, WKN, ISIN
 
 #### Outputs
-- **Portfolio sheet:**
+- **`Portfolio` sheet:**
   - Holdings, average price, current value, and allocation
-- **Dashboard:**
+- **`Dashboard`:**
   - Total investment, current value, dividends, and profit
   - Performance indicators with color coding
   - Portfolio allocation (pie chart)
@@ -77,13 +77,13 @@ Track stock and ETF investments, including performance, current value, and divid
   - Dividend history with yearly breakdown and line chart
 
 #### How to Use
-1. Add new assets in the *Portfolio* sheet (name, WKN, ISIN)
-2. Record transactions and dividends in the *Eingabe* sheet
+1. Add new assets in the `Portfolio` sheet (name, WKN, ISIN)
+2. Record transactions and dividends in the `Eingabe` sheet
 3. Refresh data to update real-time prices
-4. Review performance and analytics in the *Dashboard*
+4. Review performance and analytics in the `Dashboard`
 
 #### Notes / Limitations
-- Real-time prices depend on data from an external website (börse.de)
+- Real-time prices depend on data from an external website (boerse.de)
 - Data must be refreshed manually
-- Only the *Eingabe* and initial *Portfolio* setup should be modified
+- Only the `Eingabe` and initial `Portfolio` setup should be modified
 - Asset identification is based on WKN
