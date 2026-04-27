@@ -13,7 +13,7 @@ The repository includes multiple independent projects. Each project is provided 
 
 | Name | Description | File |
 |------|------------|------|
-| Budget Tracker | Tracks income and expenses in a structured format | `Budget_Tracker.xlsm` |
+| Budget Tracker | Tracks and analyzes personal finances with automated aggregation and a dynamic overview dashboard | `Budget_Tracker.xlsm` |
 | Stock Portfolio Manager | Tracks stock investments, performance, and dividends using current market data and automated calculations | `Stock_Portfolio_Manager.xlsx` |
 
 ---
