@@ -23,28 +23,54 @@ The repository includes multiple independent projects. Each project is provided 
 ### Budget Tracker 
 
 #### Purpose
-Brief explanation of what the workbook is used for.
+Track and analyze personal income and expenses with structured data entry, automated aggregation, and multi-level financial overview.
 
 #### Features
-- Feature 1
-- Feature 2
-- Feature 3
+- Centralized expense entry with categorized tracking
+- Automated aggregation across days, weeks, months, and years
+- Conditional formatting based on spending limits
+- Dynamic overview dashboard with time-based analysis (days, weeks, months)
+- Annual financial planning with income, expenses, and balance calculation
+- Supporting tools (currency conversion, quick totals, temporary notes)
 
 #### Inputs
-- What the user enters (sheets, cells, forms, etc.)
+- **`Eingabe` sheet (primary usage):**
+  - Date, amount, category (predefined), and details
+  - Optional notes for temporary entries
+  - Daily budget ("Tagespensum") for evaluation logic
+- **`Finanzplan` sheets:**
+  - Manual input for income and fixed expenses
+- **System structure:**
+  - Categories define aggregation across all sheets
+
 
 #### Outputs
-- What the workbook produces (tables, summaries, charts, etc.)
+- **`Übersicht` dashboard:**
+  - Aggregated expenses for last 30 days, 10 weeks, and 4 months
+  - Category-based breakdowns with conditional formatting
+- **`Ausgaben` sheets:**
+  - Full-year tracking of daily, weekly, and monthly expenses
+- **`Finanzplan` sheets:**
+  - Income, expenses, and resulting balance (yearly and monthly)
+- **Visual indicators:**
+  - Color-coded performance relative to the defined daily budget
+- **`Einzelbeträge`:**
+  - Central database of all recorded transactions
+  - Filter options by date, amount, category, and detail
 
 #### How to Use
-1. Step 1
-2. Step 2
-3. Step 3
+1. Enter expenses in the `Eingabe` sheet and click "Hinzufügen"
+2. Maintain asset categories consistently
+3. Optionally define a daily budget ("Tagespensum")
+4. Review short-term trends in `Übersicht`
+5. Analyze yearly data in `Ausgaben` and `Financial Plan` sheets
 
 #### Notes / Limitations
-- Known constraints
-- Things the user should avoid changing
-- Assumptions in the design
+- Only the `Eingabe` sheet should be used for regular data entry
+- Data consistency depends on correct category usage
+- Budget evaluation is based on a fixed daily threshold ("Tagespensum")
+- Real-time editing of historical data should be done in `Einzelbeträge`
+- Example data is included for demonstration purposes
 
 ---
 
